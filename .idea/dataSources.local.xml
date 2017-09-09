@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MusicStoreWebsite@localhost" uuid="1c050b3d-e5af-41f6-9da4-44114c0c02a2">
+      <database-info product="MySQL" version="5.7.12-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <resolve-scope>MusicStoreWebsite:</resolve-scope>
+    </data-source>
+    <data-source name="test" uuid="303f84e3-8556-4f0b-9214-7a68a5eab679">
+      <database-info product="H2" version="1.4.192 (2016-05-26)" jdbc-version="4.0" driver-name="H2 JDBC Driver" driver-version="1.4.192 (2016-05-26)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <resolve-scope>TEST:public</resolve-scope>
+    </data-source>
+  </component>
+</project>

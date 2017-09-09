@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MusicStoreWebsite@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="musicstorewebsite">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="manoj"/>
+    <schema id="5" parent="1" name="music"/>
+    <schema id="6" parent="1" name="myblog"/>
+    <schema id="7" parent="1" name="mysql"/>
+    <schema id="8" parent="1" name="performance_schema"/>
+    <schema id="9" parent="1" name="sakila"/>
+    <schema id="10" parent="1" name="springtutorial">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="11" parent="1" name="student_tracker"/>
+    <schema id="12" parent="1" name="sys"/>
+    <schema id="13" parent="1" name="test"/>
+    <schema id="14" parent="1" name="web_student_tracker"/>
+    <schema id="15" parent="1" name="world"/>
+    <schema id="16" parent="1" name="ecommercemusic">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="17" parent="1" name="manojmusicstore">
+      <Visible>1</Visible>
+    </schema>
+    <table id="18" parent="2" name="authorities"/>
+    <table id="19" parent="2" name="users"/>
+    <table id="20" parent="16" name="hibernate_sequence"/>
+    <column id="21" parent="18" name="username">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="18" name="authority">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="23" parent="18" name="fk_authorities_users">
+      <ColNames>username</ColNames>
+    </index>
+    <foreign-key id="24" parent="18" name="fk_authorities_users">
+      <ColNames>username</ColNames>
+      <RefSchemaName>musicstorewebsite</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>username</RefColNames>
+    </foreign-key>
+    <column id="25" parent="19" name="username">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="19" name="password">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="19" name="enabled">
+      <Position>3</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="28" parent="19" name="PRIMARY">
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="29" parent="20" name="next_val">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
